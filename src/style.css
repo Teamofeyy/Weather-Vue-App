@@ -179,3 +179,38 @@ button {
   gap: 20px;
   font-size: 40px;
 }
+
+/* Адаптивные стили */
+@media (max-width: 828px) {
+  .weather-info__text {
+    font-size: 20px;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .weather-form__btn {
+    flex-basis: auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .weather-form {
+    flex-direction: column; /* Устанавливаем вертикальное направление */
+    align-items: stretch; /* Выравнивание элементов по ширине */
+  }
+
+  .weather-form__input {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .weather-form__btn {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+}
