@@ -198,7 +198,7 @@ button {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
   .weather-form {
     flex-direction: column; /* Устанавливаем вертикальное направление */
     align-items: stretch; /* Выравнивание элементов по ширине */
